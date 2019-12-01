@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   name = 'Angular 5';
 
-  komunikat = 'Ala ma kota';
+  komunikat: string;
 
   ngOnInit() {
+    this.komunikat = 'Ala ma kota';
   }
 }
