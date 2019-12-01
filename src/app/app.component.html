@@ -2,15 +2,16 @@
 <p>
   Zmieniony paragraf
 </p>
-<div>
-  <p *ngFor="let k of komunikaty">
-    {{k}}
+<p><br>```</p>
+  <div *ngFor="let k of komunikaty">
+    <p *ngIf="k.wazny">
+      Ważne!
+    </p>
+   <p>
+    {{k.tresc}} {{k.dataDodania | date:'medium'}}
   </p>
 </div>
-<div *ngIf="pokazKomunikaty">
-  Jestem
-</div>
-<div>
-  {{nowyKomunikat.tresc}} ({{nowyKomunikat.dataDodania | date:'short'}})
-</div>
+<p>```</p>
+
+
 
