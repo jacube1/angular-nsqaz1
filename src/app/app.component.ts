@@ -8,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   name = 'Angular 5';
 
-  komunikat: string;
+  komunikaty: string[];
 
   ngOnInit() {
-    this.komunikat = 'Ala ma kota';
+    this.komunikaty = [
+  'Ala ma kota',
+  'Kot ma dosc Ali',
+  'Kot i Ala drą ze sobą koty'
+];
   }
 }
