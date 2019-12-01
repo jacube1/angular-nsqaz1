@@ -1,15 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-@Component
-(
-  {
-    selector: 'my-app',
-    templateUrl: './app.component.html',
-    styleUrls: [ './app.component.css' ]
-  }
-)
-export class AppComponent  
-{
+@Component({
+  selector: 'my-app',
+  templateUrl: './app.component.html',
+  styleUrls: [ './app.component.css' ]
+})
+export class AppComponent implements OnInit {
   name = 'Angular 5';
+
   komunikat = 'Ala ma kota';
+
+  ngOnInit() {
+  }
 }
