@@ -1,3 +1,4 @@
+import { Komunikat } from './komunikat';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,12 +11,13 @@ export class AppComponent implements OnInit {
 
   komunikaty: string[];
   pokazKomunikaty = true;
-
+  nowyKomunikat: Komunikat;
   ngOnInit() {
     this.komunikaty = [
   'Ala ma kota',
   'Kot ma dosc Ali',
   'Kot i Ala drą ze sobą koty'
 ];
+this.nowyKomunikat = new Komunikat('Nowy komunikat', new Date(), true);
   }
 }
