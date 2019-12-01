@@ -9,6 +9,7 @@ export class AppComponent implements OnInit {
   name = 'Angular 5';
 
   komunikaty: string[];
+  pokazKomunikaty = true;
 
   ngOnInit() {
     this.komunikaty = [
