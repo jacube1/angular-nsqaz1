@@ -2,11 +2,13 @@
 Zadanie3
 </p>
 <div *ngFor="let k of mirinda">
-    <p *ngIf="k.wazny">
-      Ważne!
+ 
+    <p class="a" *ngIf="k.wazny">
+        Ważne!
     </p>
-   <p>
-    {{k.tresc}} {{k.dataDodania | date:'medium'}}
-  </p>
+    <p>
+      {{k.tresc}} {{k.dataDodania | date:'medium'}}
+    </p>
+ 
 </div>
 
