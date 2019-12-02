@@ -7,6 +7,6 @@ import { Komunikat } from '../komunikat';
 })
 export class KomunikatComponent {
 
-@Input() komunikaty: Komunikat[];
+@Input() mirinda: Komunikat[];
 
 }
