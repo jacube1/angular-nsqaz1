@@ -1,0 +1,11 @@
+<p>
+komunikat works!
+</p>
+<div *ngFor="let k of komunikaty">
+    <p *ngIf="k.wazny">
+      Ważne!
+    </p>
+   <p>
+    {{k.tresc}} {{k.dataDodania | date:'medium'}}
+  </p>
+</div>
